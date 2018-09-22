@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'groovy'
+}
+
+sourceCompatibility = 1.8
+
+dependencies {
+
+    // mandatory dependencies for using Spock
+    compile "org.codehaus.groovy:groovy-all:2.4.15"
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+}
+
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    mavenCentral()
+}
